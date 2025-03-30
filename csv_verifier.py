@@ -577,6 +577,7 @@ def main():
     parser.add_argument('--encoding', default='utf-8', help='Target encoding for transformation')
     parser.add_argument('--find', action='store_true', help='Try to find the file if exact path not found')
     parser.add_argument('--verify-after', action='store_true', help='Verify the file after transformation')
+    parser.add_argument('--user', default='dgonzamat', help='Username for file operations')
     
     args = parser.parse_args()
     
