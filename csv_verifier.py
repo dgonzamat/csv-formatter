@@ -572,7 +572,7 @@ def main():
     parser = argparse.ArgumentParser(description='Verify and transform file structure')
     parser.add_argument('file', help='File to verify or transform')
     parser.add_argument('--delimiter', default=',', help='CSV delimiter (use "auto" for auto-detection)')
-    parser.add_argument('--transform', action='store_true', help='Transform the file to UTF-8')
+    parser.add_argument('--transform', action='store_true', help='Transform the file to the specified encoding (default: UTF-8)')
     parser.add_argument('--output', help='Output file for transformation (if not specified, saves in same directory as input)')
     parser.add_argument('--encoding', default='utf-8', help='Target encoding for transformation')
     parser.add_argument('--find', action='store_true', help='Try to find the file if exact path not found')
